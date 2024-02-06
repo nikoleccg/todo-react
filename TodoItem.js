@@ -1,9 +1,11 @@
-function TodoItem(){
+function TodoItem({text, completed}){
   return (
-    <li>
-      <span>V</span>
-      <p>Esta es mi primera Tarea</p>
-      <span>X</span>
+    <li className="TodoItem">
+      <span className={`Icon Icon-check ${completed && "Icon-checked--active"}`}>V</span>
+      <p className={`TodoItem-p ${completed && "TodoItem-p--completed"}`}>
+        {text}
+        </p>
+      <span className="Icon Icon-delete">x</span>
     </li>
   )
 }

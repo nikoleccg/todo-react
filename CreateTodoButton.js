@@ -1,7 +1,7 @@
 function CreateTodoButton(){
     return (
-        <button>Botón</button>
-    )
+        <button>+</button>
+    );
 }
 
-export { CreateTodoButton }
+export { CreateTodoButton };
